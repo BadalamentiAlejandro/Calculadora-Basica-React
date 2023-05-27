@@ -1,0 +1,14 @@
+.componente-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.componente-principal-titulo {
+    color: beige;
+    font-size: 5em;
+    margin: 1rem;
+    font-weight: bold;
+}

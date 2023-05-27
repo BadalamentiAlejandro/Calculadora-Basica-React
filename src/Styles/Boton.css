@@ -1,0 +1,41 @@
+.boton-contenedor-operador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(0, 110, 0);
+    margin: 0.5rem;
+    width: 4dvw;
+    aspect-ratio: 1 / 1;
+    border: 2px solid beige;
+    border-radius: 7px;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+}
+
+.boton-contenedor-operador:hover {
+    background-color: purple;
+}
+
+.boton-contenedor-no-operador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(194, 194, 0);
+    margin: 0.5rem;
+    width: 4dvw;
+    aspect-ratio: 1 / 1;
+    border: 2px solid beige;
+    border-radius: 7px;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+}
+
+.boton-contenedor-no-operador:hover {
+    background-color: purple;
+}

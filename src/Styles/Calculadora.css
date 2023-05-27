@@ -1,0 +1,19 @@
+.contenedor-calculadora {
+    min-width: 27dvw;
+    height: 70dvh;
+    border: 5px solid beige;
+    background-color: rgb(84, 84, 255);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.filas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
