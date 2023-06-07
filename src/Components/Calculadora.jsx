@@ -3,6 +3,7 @@ import '../Styles/Calculadora.css';
 import Boton from './Boton';
 import BotonClear from './BotonClear';
 import Input from './Input';
+import BotonErase from './BotonErase';
 import { useState } from 'react';
 
 //Uso de librería externa para realizar los calculos matemáticos de forma automática.
@@ -21,6 +22,11 @@ function Calculadora() {
     //Como dice el nombre, esta función resetea el input.
     const clear = () => {
         setInput('');
+    };
+
+    //Mediante esta función podemos borrar el último caracter que agregamos en la calculadora.
+    const erase = () => {
+        setInput(input.substring(0, input.length - 1));
     };
 
     //Función que permite realizar los cálculos matemáticos mediante la librería 'Mathjs'. Se utiliza el método 'evaluate'
@@ -58,7 +64,10 @@ function Calculadora() {
                 <Boton handleClick={addInput}>.</Boton>
                 <Boton handleClick={addInput} disable={disableOperators}>+</Boton>
             </div>
-            <BotonClear handleClick={clear} />
+            <div className='ultima-fila'>
+                <BotonErase handleClick={erase} />
+                <BotonClear handleClick={clear} />
+            </div>
         </div>
     );
 }
